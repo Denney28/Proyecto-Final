@@ -180,9 +180,9 @@
     <Compile Include="Migrations\202006020339189_User.Designer.cs">
       <DependentUpon>202006020339189_User.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202006030640354_barberworks.cs" />
-    <Compile Include="Migrations\202006030640354_barberworks.Designer.cs">
-      <DependentUpon>202006030640354_barberworks.cs</DependentUpon>
+    <Compile Include="Migrations\202006030704029_barberworks.cs" />
+    <Compile Include="Migrations\202006030704029_barberworks.Designer.cs">
+      <DependentUpon>202006030704029_barberworks.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -288,8 +288,8 @@
     <EmbeddedResource Include="Migrations\202006020339189_User.resx">
       <DependentUpon>202006020339189_User.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202006030640354_barberworks.resx">
-      <DependentUpon>202006030640354_barberworks.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202006030704029_barberworks.resx">
+      <DependentUpon>202006030704029_barberworks.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -49,7 +49,7 @@ namespace ProyectiFinal.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Phone,BarberId,CorteId")] Cita cita)
+        public ActionResult Create([Bind(Include = "Id,Name,Phone,Day,BarberId,CorteId")] Cita cita)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace ProyectiFinal.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Phone,BarberId,CorteId")] Cita cita)
+        public ActionResult Edit([Bind(Include = "Id,Name,Phone,Day,BarberId,CorteId")] Cita cita)
         {
             if (ModelState.IsValid)
             {

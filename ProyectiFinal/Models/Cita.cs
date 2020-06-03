@@ -21,6 +21,10 @@ namespace ProyectiFinal.Models
         [MaxLength(50)]
         public string Phone { get; set; }
 
+        [Required]
+        [Display(Name = "Fecha de Cita Programada")]
+        public DateTime Day { get; set; }
+
         public int BarberId { get; set; }
         [ForeignKey("BarberId")]
         public Barber Barber { get; set; }

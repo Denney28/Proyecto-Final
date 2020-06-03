@@ -27,6 +27,7 @@ namespace ProyectiFinal.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(nullable: false, maxLength: 100),
                         Phone = c.String(nullable: false, maxLength: 50),
+                        Day = c.DateTime(nullable: false),
                         BarberId = c.Int(nullable: false),
                         CorteId = c.Int(nullable: false),
                     })

@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using ProyectiFinal.Models;
+using System.IO;
 
 namespace ProyectiFinal.Controllers
 {
@@ -19,6 +20,20 @@ namespace ProyectiFinal.Controllers
         {
             return View(db.Barbers.ToList());
         }
+
+        [HttpPost]
+        public ActionResult Index(HttpPostedFileBase file)
+        {
+            if(file != null && file.ContentLength>0)
+            {
+                var fileName = Path.GetFileName(file.FileName);
+                var path = Path.Combine(Server.MapPath("~/Content/Img"), fileName);
+                file.SaveAs(path);
+            }
+            return RedirectToAction("Index");
+        }
+
+
 
         // GET: Barbers/Details/5
         public ActionResult Details(int? id)

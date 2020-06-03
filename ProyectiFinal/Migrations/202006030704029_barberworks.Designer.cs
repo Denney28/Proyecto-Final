@@ -13,7 +13,7 @@ namespace ProyectiFinal.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202006030640354_barberworks"; }
+            get { return "202006030704029_barberworks"; }
         }
         
         string IMigrationMetadata.Source
