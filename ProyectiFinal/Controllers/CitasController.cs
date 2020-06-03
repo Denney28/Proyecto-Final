@@ -40,7 +40,7 @@ namespace ProyectiFinal.Controllers
         public ActionResult Create()
         {
             ViewBag.BarberId = new SelectList(db.Barbers, "id", "Name");
-            ViewBag.CorteId = new SelectList(db.Cortes, "Id", "ImagenUrl");
+            ViewBag.CorteId = new SelectList(db.Cortes, "Id", "Name");
             return View();
         }
 
@@ -59,7 +59,7 @@ namespace ProyectiFinal.Controllers
             }
 
             ViewBag.BarberId = new SelectList(db.Barbers, "id", "Name", cita.BarberId);
-            ViewBag.CorteId = new SelectList(db.Cortes, "Id", "ImagenUrl", cita.CorteId);
+            ViewBag.CorteId = new SelectList(db.Cortes, "Id", "Name", cita.CorteId);
             return View(cita);
         }
 
@@ -76,7 +76,7 @@ namespace ProyectiFinal.Controllers
                 return HttpNotFound();
             }
             ViewBag.BarberId = new SelectList(db.Barbers, "id", "Name", cita.BarberId);
-            ViewBag.CorteId = new SelectList(db.Cortes, "Id", "ImagenUrl", cita.CorteId);
+            ViewBag.CorteId = new SelectList(db.Cortes, "Id", "Name", cita.CorteId);
             return View(cita);
         }
 
@@ -94,7 +94,7 @@ namespace ProyectiFinal.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.BarberId = new SelectList(db.Barbers, "id", "Name", cita.BarberId);
-            ViewBag.CorteId = new SelectList(db.Cortes, "Id", "ImagenUrl", cita.CorteId);
+            ViewBag.CorteId = new SelectList(db.Cortes, "Id", "Name", cita.CorteId);
             return View(cita);
         }
 
