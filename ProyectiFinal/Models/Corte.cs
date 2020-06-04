@@ -16,8 +16,6 @@ namespace ProyectiFinal.Models
         [MaxLength(100)]
         public string Name { get; set; }
 
-        public string ImagenUrl { get; set; }
-
         [Required]
         [Display(Name = "Descripcion")]
         [MaxLength(100)]
