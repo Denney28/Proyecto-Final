@@ -23,7 +23,10 @@ namespace MioBarber.Models
 
         [Required]
         [Display(Name = "Fecha de Cita Programada")]
-        public DateTime Day { get; set; }
+        public DateTime? Day { get; set; }
+        [Required]
+        [Display(Name = "Hora de Cita Programada")]
+        public TimeSpan? Time { get; set; }
 
         public int BarberId { get; set; }
         [ForeignKey("BarberId")]

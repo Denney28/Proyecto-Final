@@ -7,13 +7,13 @@ namespace MioBarber.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class BarberWorks : IMigrationMetadata
+    public sealed partial class barberworks : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(BarberWorks));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(barberworks));
         
         string IMigrationMetadata.Id
         {
-            get { return "202006041901472_BarberWorks"; }
+            get { return "202006050644220_barberworks"; }
         }
         
         string IMigrationMetadata.Source

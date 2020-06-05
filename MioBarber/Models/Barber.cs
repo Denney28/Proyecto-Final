@@ -12,7 +12,7 @@ namespace MioBarber.Models
         public int id { get; set; }
 
         [Required]
-        [Display(Name = "Nombre")]
+        [Display(Name = "Nombre-Barbero")]
         [MaxLength(100)]
         public string Name { get; set; }
 

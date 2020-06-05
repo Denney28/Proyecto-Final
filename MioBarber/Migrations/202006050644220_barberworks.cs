@@ -3,7 +3,7 @@ namespace MioBarber.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class BarberWorks : DbMigration
+    public partial class barberworks : DbMigration
     {
         public override void Up()
         {
@@ -38,6 +38,7 @@ namespace MioBarber.Migrations
                         Name = c.String(nullable: false, maxLength: 100),
                         Phone = c.String(nullable: false, maxLength: 50),
                         Day = c.DateTime(nullable: false),
+                        Time = c.Time(nullable: false, precision: 7),
                         BarberId = c.Int(nullable: false),
                         CorteId = c.Int(nullable: false),
                     })
